@@ -1,0 +1,3 @@
+Here for the initial commit!
+Working on a mock Drone parts store.
+The site will utilize HTML, CSS, JavaScript, PHP and have a backend of products and user signup.
