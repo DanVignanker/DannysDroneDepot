@@ -1,0 +1,30 @@
+  257  nano index.html
+  258  sudo service apache2 start
+  259  nc
+  260  nc -v localhost 80
+  261  sudo a2enmod rewritesudo service apache2 restart
+  262  sudo a2enmod rewrite
+  263  sudo service apache2 restart
+  264  sudo apt-get install software-properties-common
+  265  sudo apt-get install mariadb-server
+  266  sudo service mysql start
+  267  sudo service mysql status
+  268  mysql_secure_installation
+  269  mysql
+  270  nc -v localhost 3306
+  271  mysql
+  272  sudo mysql
+  273  sudo bash
+  274  nano info.php
+  275  php info.php
+  276  nano info.php
+  277  php info.php
+  278  sudo apt-get install phpmyadmin
+  279  sudo phpenmod mcryptsudo phpenmod mbstring
+  280  sudo phpenmod mcrypt
+  281  sudo phpenmod mbstring
+  282  sudo service apache2 restart
+  283  ls
+  284  3
+  285  sudo bash
+  286  history
