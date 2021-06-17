@@ -1,5 +1,7 @@
 <?php 
 
+session_start();
+
 $mysqli = new mysqli("localhost", "daniel", "dbDanielVignanker", "drones_site");
 
 //checked connection to MySQL DB
@@ -25,18 +27,17 @@ if ($allFieldsEntered) {
 
     $result = $mysqli->query($sql);
 
-    $userIsValid = false;
+    $rowsResult = mysqli_num_rows($result);
 
-    if ($result && mysqli_num_rows($result) > 0) {
-        while ($row = $result->fetch_row()) {
-            $userIsValid = true;
-            echo "Valid User logged in!";
-        }
+    if ($rowsResult == 1) { 
+        $_SESSION['username'] = $username;
+        header('location: mainPage.php');
+        exit();
+    } else {
+        header('location: loginSignup.html');
+        exit();
     }
 
-    if (!$userIsValid) {
-        echo "The Username or Passcode you entered is incorrect. Please try again.";
-    }
     $result->close();
 }
 

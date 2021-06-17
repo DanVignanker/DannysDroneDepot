@@ -45,6 +45,8 @@ if ($rows_username == 1) {
         $entrySQL = "INSERT INTO userInformation VALUES ('$username', '$password', '$fname','$lname')";
         $result = $mysqli->query($entrySQL);
         echo "Sign Up Successful";
+        header('location:loginSignup.html');
+        exit();
     }
 }
 
